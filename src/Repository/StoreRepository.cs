@@ -23,5 +23,11 @@ namespace clase31marzo.src.Repository
         {
             return await _dataContext.Stores.Include(s => s.Products).ToListAsync();
         }
+
+        public async Task<Store?> GetStoreById(int id)
+        {
+            var store = await _dataContext.Stores.Include(s => s.Products).FirstOrDefaultAsync(s => s.Id == id);
+            return store;
+        }
     }
 }

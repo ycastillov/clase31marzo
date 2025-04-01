@@ -7,8 +7,9 @@ namespace clase31marzo.src.Interfaces
     {
         // Crear Tienda
         Task<Store> CreateStore(Store store);
-
         // Obtener todas las tiendas
         Task<List<Store>> GetAllStores();
+        // Obtener tienda por Id
+        Task<Store?> GetStoreById(int id);
     }
 }

@@ -18,14 +18,13 @@ namespace clase31marzo.src.Mappers
                 StoreId = product.StoreId
             };
         }
-        public static Product ToProduct(this ProductDto productDto)
+        public static Product ToProduct(this ProductDto productDto, int storeId)
         {
             return new Product
             {
-                Id = productDto.Id, // Ensure the required 'Id' is set
                 Name = productDto.Name,
                 Price = productDto.Price,
-                StoreId = productDto.StoreId
+                StoreId = storeId
             };  
         }
     }

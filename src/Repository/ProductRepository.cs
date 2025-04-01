@@ -19,5 +19,11 @@ namespace clase31marzo.src.Repository
             await _dataContext.SaveChangesAsync();
             return product;
         }
+
+        public async Task<Product?> GetProductById(int id)
+        {
+            var product = await _dataContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+            return product;
+        }
     }
 }

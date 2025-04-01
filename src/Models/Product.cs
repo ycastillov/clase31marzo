@@ -7,10 +7,11 @@ namespace clase31marzo.src.Models
 {
     public class Product
     {
-        public required int Id { get; set; }
-        public required string Name { get; set; } = string.Empty;
-        public required int Price { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public int Price { get; set; }
         // Relationship with Store
-        public required int StoreId { get; set; }
+        public int StoreId { get; set; }
+        public Store Store { get; set; } = null!;// Navigation property
     }
 }

@@ -10,5 +10,6 @@ namespace clase31marzo.src.Interfaces
     {
         // Crear Producto
         Task<Product> CreateProduct(Product product, int storeId);
+        Task<Product?> GetProductById(int id);
     }
 }

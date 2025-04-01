@@ -7,8 +7,8 @@ namespace clase31marzo.src.Dtos
 {
     public class StoreDto
     {
-        public string Nombre { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
         public string City { get; set; } = string.Empty;
-        public List<ProductDto> Products { get; set; } = new List<ProductDto>();
+        public List<ProductDto> Products { get; set; } = [];
     }
 }
