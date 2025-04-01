@@ -60,7 +60,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Product Name\",\r\n  \"price\": 100\r\n}",
+					"raw": "{\r\n  \"name\": \"Product Name 2\",\r\n  \"price\": 100\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -68,7 +68,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5227/product/",
+					"raw": "http://localhost:5227/product/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -76,7 +76,7 @@
 					"port": "5227",
 					"path": [
 						"product",
-						""
+						"1"
 					]
 				}
 			},
@@ -86,7 +86,19 @@
 			"name": "Obtener producto específico",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5227/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5227",
+					"path": [
+						"product",
+						"1"
+					]
+				}
 			},
 			"response": []
 		}
