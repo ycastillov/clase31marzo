@@ -28,8 +28,3 @@ using (var scope = app.Services.CreateScope()) // Se levanta la base de datos
 }
 
 app.Run();
-
-// AGREGAR CONTEXTO AL PROGRAM
-// dotnet add package (EFCORE) (SQLITE)
-// MIGRACIONES: dotnet ef migrations add <nombre> -o <ruta>
-// levantamiento automatico de la BD
